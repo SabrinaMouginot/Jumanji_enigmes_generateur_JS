@@ -28,8 +28,10 @@ header {
 }
 
 #enigma-container {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
+    width: 30%;
+    aspect-ratio: 1 / 1; /* Rapport hauteur/largeur, ici 1:1 pour un carré */
     margin: 50px auto;
     padding: 20px;
     background-color: #253c4a;
@@ -48,6 +50,19 @@ header {
 #enigma-text {
     font-size: 1.2em;
     margin-bottom: 20px;
+    width: 80%;
+    aspect-ratio: 1 / 1; /* Rapport hauteur/largeur, ici 1:1 pour un carré */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 580px) {
+    #enigma-text {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
 }
 
 #enigma {
