@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #002a3a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #002a3a;
+    padding: 10px;
+    text-align: left;
+}
+
+#logo-container {
+    max-width: 15%;
+    /* Ajustez la taille maximale du logo selon vos préférences */
+}
+
+#site-logo {
+    width: 100%;
+    height: auto;
+}
+
+#container-wrapper {
+    position: relative;
+}
+
+#enigma-container {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #253c4a;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#enigma-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#enigma {
+    opacity: 0;
+    /* Définir l'opacité initiale à 0 */
+    animation: fadeIn 1s ease-in-out forwards;
+    /* Animation de fondu en entrée */
+}
+
+#generate-btn {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate-btn:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* LES DES */
+/* 
+.dice {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+#dice1 {
+    left: 200px;
+    top: 100px;  */
+/* Ajustez la position en fonction de vos préférences */
+/* }
+
+#dice2 {
+    right: 100px;  */
+/* Ajustez la position en fonction de vos préférences */
+/* top: 200px;
+} */
